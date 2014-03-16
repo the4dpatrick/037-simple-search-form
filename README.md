@@ -3,7 +3,7 @@
 
 Followed along with Railscast 037 Simple Search Form
 
-[Blog Post](http://patrickperey.com/railscast-037-simple-search-form) @ [PatrickPerey.com](http://patrickperey.com
+[Blog Post](http://patrickperey.com/railscast-037-simple-search-form) @ [PatrickPerey.com](http://patrickperey.com)
 
 ```erb
 <%= form_tag projects_path, method: :get do %>
