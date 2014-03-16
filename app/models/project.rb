@@ -3,7 +3,11 @@ class Project < ActiveRecord::Base
 
   def self.search(search)
     if search
-      where("name ILIKE ?", "%#{search}%")
+      if Rails.env.development?
+        where("name LIKE ?", "%#{search}%")
+      elsif Rails.env.production?
+        where("name ILIKE ?", "%#{search}%")
+      end
     else
       all
     end
